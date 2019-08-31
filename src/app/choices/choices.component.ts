@@ -20,7 +20,8 @@ export class ChoicesComponent  {
 
    selectToppings(topping) {
      console.log(topping);
-     if (this.selectedToppings.indexOf(topping) === -1) {
+     console.log(this.selectedToppings.indexOf(topping) === -1); // find duplicate topping
+     if (true) {
        this.selectedToppings.push(topping);
      } else {
        this.selectedToppings.splice(this.selectedToppings.indexOf(topping), 1);
